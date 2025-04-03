@@ -25,21 +25,21 @@
                     <div class="forms">
                         <form action="" method="get" class="forms-left">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="first-name" required pattern="/^[a-z ,.'-]+$/i" autocomplete="given-name"> 
+                            <input type="text" name="first-name" id="first-name" required autocomplete="given-name" minlength="1" placeholder="John"> 
                             <label for="email">EMAIL</label>
                             <input type="email" placeholder="example@example.com" name="email" id="email" required autocomplete="email">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                            <input type="password" name="password" id="password" required placeholder="6-20 characters long">
                         </form>
                     </div>
                     <div class="forms">
                         <form action="" method="get" class="forms-right">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="last-name" required pattern="/^[a-z ,.'-]+$/i" autocomplete="family-name">
+                            <input type="text" name="last-name" id="last-name" required autocomplete="family-name" placeholder="Smith">
                             <label for="telephone">PHONE NUMBER</label>
-                            <input type="tel"  placeholder="XX-XXX-XXX" name="telephone" id="telephone" required>
+                            <input type="tel"  placeholder="XXX-XXX-XXXX"  pattern="^[1-9]\d{2}-\d{3}-\d{4}" name="telephone" id="telephone" required>
                             <label for="confirm-pass">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-pass" id="confirm-pass" required>
+                            <input type="password" name="confirm-pass" id="confirm-pass" required placeholder="6-20 characters long">
                         </form>
                     </div>
                 </div>

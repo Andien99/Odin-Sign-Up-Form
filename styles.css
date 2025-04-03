@@ -137,15 +137,13 @@ img {
     font-size: 16px;
 }
 
-input:invalid {
-    border-color: red;
-    outline: 0px;
-}
-
 input:focus-visible {
     outline: 1px solid rgb(101, 101, 207);
 }
 
+input:valid {
+    border-color: green;
+}
 .account > a {
     color: #596D48;
     text-decoration: none;
@@ -153,4 +151,12 @@ input:focus-visible {
 
 a {
     color: white;
+}
+
+input:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+  
+input:not(:placeholder-shown):valid {
+    border-color: green;
 }
