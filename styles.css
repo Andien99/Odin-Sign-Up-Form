@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(fonts/norse-bold-webfont.woff2);
+}
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: rgb(85, 189, 85);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+}
+
+.blurb {
+    padding-top: 5em;
+    padding-right: 6em;
+}
+
+
+.container {
+    display: flex;
+    max-width: 1236px;
+    min-height: 100vh
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-grow: 1;
+    background-image: url(images/background\ RenRan.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.title {
+    font-family: 'Norse', sans-serif;
+    font-size: 100px;
+    color: white;
+    padding: 12px;
+}
+
+.blackbox {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    align-items: center;
+}
+
+.references {
+    justify-self: end;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+
+.content-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    min-height: 100vh;
+    line-height: 1.5em;
+}
+
+.forms-container {
+    box-shadow: 0px 3px 3px 2px;
+    margin-bottom: 15px;
+    color: rgba(128, 128, 128, 0.466);
+    margin-left: -32px;
+    padding-bottom: 1em;
+}
+
+.statement {
+    color: black;
+    padding-left: 32px;
+}
+.forms {
+    display: flex;
+    margin-left: 20px;
+}
+
+.forms-left, .forms-right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label, input {
+    display: flex;
+    padding: 3px;
+    margin-right: 50px;  
+ 
+}
+
+label{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(75, 72, 72);
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+button {
+    width: fit-content;
+    font-size: 15px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    padding: 1em 3.5em;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    margin-top: 1em;
+}
+
+img {
+    height: 100px
+}
+
+.account {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+input:invalid {
+    border-color: red;
+    outline: 0px;
+}
+
+input:focus-visible {
+    outline: 1px solid rgb(101, 101, 207);
+}
+
+.account > a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}

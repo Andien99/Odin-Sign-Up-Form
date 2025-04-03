@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="border">
+            <div class="blackbox">
+                <img src="images/odin-lined.png" alt="Odin Project Logo">
+                <div class="title">ODIN</div>
+            </div>
+            <p class="references">Photo by <a href="http://https://unsplash.com/@renran">Ren Ran</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+        <div class="info-container">
+        <div class="content-container">
+            <p class="blurb">This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+            <div class="forms-container">
+                <p class="statement">Let's do this!</p>
+                <div class="forms">
+                    <div class="forms">
+                        <form action="" method="get" class="forms-left">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" required pattern="/^[a-z ,.'-]+$/i" autocomplete="given-name"> 
+                            <label for="email">EMAIL</label>
+                            <input type="email" placeholder="example@example.com" name="email" id="email" required autocomplete="email">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                        </form>
+                    </div>
+                    <div class="forms">
+                        <form action="" method="get" class="forms-right">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" required pattern="/^[a-z ,.'-]+$/i" autocomplete="family-name">
+                            <label for="telephone">PHONE NUMBER</label>
+                            <input type="tel"  placeholder="XX-XXX-XXX" name="telephone" id="telephone" required>
+                            <label for="confirm-pass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-pass" id="confirm-pass" required>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+            <p class="account">Already have an account? <a href="http://google.com"><strong>Log in</strong></a></p>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
